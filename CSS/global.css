@@ -1,0 +1,113 @@
+:root {
+    --primary-color: #214477;
+    --nav-link-color: #eddb8c;
+    --go-to-btn: #f7a542;
+    --white: #FFF;
+    --black: #000;
+    --success: #78bb98;
+    --invalid: #ff7777;
+}
+
+* {
+    /* font-family: Arial, Helvetica, sans-serif; */
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+html {
+    margin: 1rem;
+}
+
+@media (max-width: 600px) {
+    html {
+        margin: 0rem;
+    }
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+body > * {
+    margin-bottom: 2rem;
+}
+
+header {
+    height: 80vh;
+}
+
+@media (max-width: 600px) {
+    header {
+        height: 50vh;
+    }
+}
+
+
+.flex, .flex-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.main-nav {
+    background-color: var(--primary-color);
+}
+
+.main-menu {
+    display: flex;
+    padding: 1rem;
+}
+
+.main-link {
+    margin: 0 0.5rem;
+}
+.main-link:not(:first-of-type) a{
+    color: var(--nav-link-color);
+}
+.main-link:first-child {
+    flex: 1;
+}
+.main-link:nth-child(2) {
+    font-weight: bold;
+}
+
+.rainbow-bg {
+    background-image: url(../images/rainbow-vortex.png);
+    background-size: 100%;
+}
+
+@media (max-width: 600px) {
+    .rainbow-bg {
+        height: calc(50vh - 3rem);
+        background-size: cover;
+    }
+}
+
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    footer {
+        font-size: 0.6rem;
+    }
+}
